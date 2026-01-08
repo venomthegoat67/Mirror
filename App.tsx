@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Layout } from './components/Layout';
-import LandingPage from './pages/LandingPage';
-import InputPage from './pages/InputPage';
-import ResponsePage from './pages/ResponsePage';
-import { UserInput } from './types';
+import { Layout } from './components/Layout.tsx';
+import LandingPage from './pages/LandingPage.tsx';
+import InputPage from './pages/InputPage.tsx';
+import ResponsePage from './pages/ResponsePage.tsx';
+import { UserInput } from './types.ts';
 
 const App: React.FC = () => {
   const [inputData, setInputData] = useState<UserInput | null>(null);
